@@ -156,10 +156,6 @@ export const BLOG_POSTS: BlogPost[] = [
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    label: 'website by',
-    link: 'https://github.com/visavisconti',
-  },
-  {
     label: 'Fakebook',
     link: 'https://www.facebook.com/bilgisarayberlin/',
   },
