@@ -136,20 +136,20 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     title: 'MAY THE COMMONS GROW AND BE EDIBLE » Arts of the Working Class',
     description: 'Issue 16 "Food Eats the Soul"',
-    link: '/blog/press/arts-of-the-working-class',
+    link: 'https://artsoftheworkingclass.org/text/may-the-commons-grow-and-be-edible',
     uid: 'blog-1',
   },
   {
-    title: 'random post',
+    title: 'Spaces of Solidarity',
     description:
-      'A deep dive into my decision to leave my job and start my own company',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+      'Ausstellung — 06.10.2023–21.01.2024 - DAZ — Deutsches Architektur Zentrum',
+    link: 'https://transformingsolidarities.net/de/news/spaces-of-solidarity/',
     uid: 'blog-2',
   },
   {
-    title: 'randon tech guide',
-    description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-    link: '/blog/example-mdx-metadata',
+    title: 'Solidaritäten transformieren - Praktiken und Infrastrukturen in der Migrationsgesellschaft .',
+    description: 'Buch: Forschungsgruppe der Technischen Universität, der Freien Universität, der Humboldt-Universität sowie der Charité – Universitätsmedizin Berlin haben über uns und andere Akteur*innen der Stadtgesellschaft ein Buch veröffentlicht',
+    link: 'https://adocs.de/de/buecher/theorie/solidaritaten-transformieren',
     uid: 'blog-3',
   },
 ]
