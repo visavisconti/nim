@@ -1,10 +1,12 @@
 'use client'
+
 import { AnimatedBackground } from '@/components/ui/animated-background'
 import { TextLoop } from '@/components/ui/text-loop'
 import { MonitorIcon, MoonIcon, SunIcon } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 
+// Optionen für Theme Switcher
 const THEMES_OPTIONS = [
   {
     label: 'Light',
@@ -23,6 +25,7 @@ const THEMES_OPTIONS = [
   },
 ]
 
+// Theme Wechsel-Buttons
 function ThemeSwitch() {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
@@ -37,7 +40,7 @@ function ThemeSwitch() {
 
   return (
     <AnimatedBackground
-      className="pointer-events-none rounded-lg bg-zinc-100 dark:bg-zinc-800"
+      className="pointer-events-none rounded-lg bg-[--card-bg]"
       defaultValue={theme}
       transition={{
         type: 'spring',
@@ -49,34 +52,33 @@ function ThemeSwitch() {
         setTheme(id as string)
       }}
     >
-      {THEMES_OPTIONS.map((theme) => {
-        return (
-          <button
-            key={theme.id}
-            className="inline-flex h-7 w-7 items-center justify-center text-zinc-500 transition-colors duration-100 focus-visible:outline-2 data-[checked=true]:text-zinc-950 dark:text-zinc-400 dark:data-[checked=true]:text-zinc-50"
-            type="button"
-            aria-label={`Switch to ${theme.label} theme`}
-            data-id={theme.id}
-          >
-            {theme.icon}
-          </button>
-        )
-      })}
+      {THEMES_OPTIONS.map((theme) => (
+        <button
+          key={theme.id}
+          className="inline-flex h-7 w-7 items-center justify-center text-[--text-faded] transition-colors duration-100 focus-visible:outline-2 data-[checked=true]:text-[--text]"
+          type="button"
+          aria-label={`Switch to ${theme.label} theme`}
+          data-id={theme.id}
+        >
+          {theme.icon}
+        </button>
+      ))}
     </AnimatedBackground>
   )
 }
 
+// Footer-Bereich mit Link + Theme-Wechsler
 export function Footer() {
   return (
-    <footer className="mt-24 border-t border-zinc-100 px-0 py-4 dark:border-zinc-800">
+    <footer className="mt-24 border-t border-[--border] px-0 py-4">
       <div className="flex items-center justify-between">
-        <a href="https://github.com/visavisconti/nim" target="_blank">
-          <TextLoop className="text-xs text-zinc-500">
+        <a href="https://github.com/visavisconti/nim" target="_blank" rel="noopener noreferrer">
+          <TextLoop className="text-xs text-[--text-faded]">
             <span>Nim.</span>
             <span>@ Github.</span>
           </TextLoop>
         </a>
-        <div className="text-xs text-zinc-400">
+        <div className="text-xs text-[--text-faded]">
           <ThemeSwitch />
         </div>
       </div>
