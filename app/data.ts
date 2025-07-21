@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: 'Random',
-    description: 'Random video of an UI kit',
+    description: 'Video of an UI kit',
     link: 'https://motion-primitives.com/',
     video:
       'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
