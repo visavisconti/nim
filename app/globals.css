@@ -22,7 +22,7 @@
 
 /* Theme CSS-Variablen für Light/Dark Mode */
 :root {
-  --background: #ece4d2;
+  --background: #ebd8af;
   --text: #1e293b;
   --card-bg: #ffffff;
   --border: #e2e8f0;
@@ -41,7 +41,7 @@
 }
 
 .dark {
-  --background: #030108;
+  --background: #0b0529;
   --text: #f8fafc;
   --card-bg: #18181b;
   --border: #3f3f46;
