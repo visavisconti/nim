@@ -38,7 +38,7 @@ export const EXPLANATION: Explanation[] = [
     id: 'text1',
     description:
       'Bilgisaray – »Palast des Wissens« – ist ein solidarischer Ort für Kultur und Nachbarschaft in Berlin-Kreuzberg. Die Idee: Räume ohne Konsumzwang schaffen.',
-    image: 'https://bilgisaray.vercel.app/assets/img/posts/front.jpg', //  /images/bilgisaray.jpg Relativ zum public-Ordner
+    image: 'https://o45.vercel.app/assets/img/posts/front.jpg', //  /images/bilgisaray.jpg Relativ zum public-Ordner
   },
   // Weitere Einträge möglich …
 ]
