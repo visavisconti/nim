@@ -28,8 +28,8 @@
 :root {
   --background: #ece4d2;    /* Warm cremeweiß – Haupthintergrund */
   --text: #1e293b;          /* Kräftiges Blau-schwarz – Körpertext */
-  --card-bg: #e7d4bf;       /* Sehr leichtes Beige/Creme – für Kacheln, Boxen usw. */
-  --border: #e2e8f0;        /* Sehr helles Grau – für Rahmen, Trennlinien */
+  --card-bg: #a8a29b;       /* Sehr leichtes Beige/Creme – für Kacheln, Boxen usw. */
+  --border: #6c99d3;        /* Sehr helles Grau – für Rahmen, Trennlinien */
   --text-faded: #64748b;    /* Mittleres Graublau – für Details, Beschreibung */
   --text-highlight: #334155;/* Dunkleres Graublau – für Kontrast/Hervorhebung */
 
@@ -51,7 +51,7 @@
 .dark {
   --background: #110b1d;    /* Tiefes, dunkles Violett/Schwarz – Haupthintergrund */
   --text: #f8facf;          /* Sehr helles Gelb/Creme – Körpertext */
-  --card-bg: #18181b;       /* Dunkelgrau/Schiefer – für Kacheln, Boxen */
+  --card-bg: #303053;       /* Dunkelgrau/Schiefer – für Kacheln, Boxen */
   --border: #3f3f46;        /* Mittelgrau – für Rahmen, Trennlinien */
   --text-faded: #a1a1aa;    /* Mittleres Grau – für Details, Beschreibung */
   --text-highlight: #e5e5e5;/* Sehr helles Grau/Weiß – für Hervorhebung */
