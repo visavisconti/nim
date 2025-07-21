@@ -148,7 +148,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     title: 'Solidaritäten transformieren - Praktiken und Infrastrukturen in der Migrationsgesellschaft .',
-    description: 'Buch: Forschungsgruppe der Technischen Universität, der Freien Universität, der Humboldt-Universität sowie der Charité – Universitätsmedizin Berlin haben über uns und andere Akteur*innen der Stadtgesellschaft ein Buch veröffentlicht',
+    description: 'Buch: Forschungsgruppe der Technischen Universität, der Freien Universität, der Humboldt-Universität sowie der Charité – Universitätsmedizin Berlin über Akteur*innen der Stadtgesellschaft',
     link: 'https://adocs.de/de/buecher/theorie/solidaritaten-transformieren',
     uid: 'blog-3',
   },
