@@ -1,14 +1,14 @@
-/* Import der Tailwind-Base- und Typography-Plugins */
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
-/* Dark Mode wird auf .dark *-Elemente angewendet */
 @custom-variant dark (&:is(.dark *));
 
 /*
-  Kompatibilität: Setze den alten, zarten Grau-200-Rahmen als Default,
-  damit UI-Elemente auch ohne explizite Angabe weiter durchgehend einen
-  dezenten Rahmen behalten (wie in Tailwind v3).
-  Kann später gelöscht werden, wenn alle Border-Colors explizit gesetzt sind.
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
 */
 @layer base {
   *,
@@ -20,20 +20,16 @@
   }
 }
 
-/**************************************
- * Farbschema-Light-Mode – deine eigenen Werte!
- * Diese Farben ergeben eine angenehme, natürlich-warme Einrichtung
- * mit leichten creme/beige/orange-Tönen.
- **************************************/
+/* Theme CSS-Variablen für Light/Dark Mode */
 :root {
-  --background: #ece4d2;    /* Warm cremeweiß – Haupthintergrund */
-  --text: #1e293b;          /* Kräftiges Blau-schwarz – Körpertext */
-  --card-bg: #e7d4bf;       /* Sehr leichtes Beige/Creme – für Kacheln, Boxen usw. */
-  --border: #e2e8f0;        /* Sehr helles Grau – für Rahmen, Trennlinien */
-  --text-faded: #64748b;    /* Mittleres Graublau – für Details, Beschreibung */
-  --text-highlight: #334155;/* Dunkleres Graublau – für Kontrast/Hervorhebung */
+  --background: #ece4d2;
+  --text: #1e293b;
+  --card-bg: #e7d4bf;
+  --border: #e2e8f0;
+  --text-faded: #64748b;
+  --text-highlight: #334155;
 
-  /* Syntax Highlighting – Farben für Codeblöcke (optional, bitte passen bei Bedarf) */
+  /* Syntax Highlighting (behalten, pass optional an) */
   --sh-class: #7aa2f7;
   --sh-sign: #89ddff;
   --sh-string: #9ece6a;
@@ -44,66 +40,41 @@
   --sh-entity: #e0af68;
 }
 
-/**************************************
- * Farbschema-Dark-Mode – ebenfalls deine eigenen Werte!
- * Kräftige, dunkle Basis mit warmen Gelb- und Beige-Akzenten.
- **************************************/
 .dark {
-  --background: #110b1d;    /* Tiefes, dunkles Violett/Schwarz – Haupthintergrund */
-  --text: #f8facf;          /* Sehr helles Gelb/Creme – Körpertext */
-  --card-bg: #18181b;       /* Dunkelgrau/Schiefer – für Kacheln, Boxen */
-  --border: #3f3f46;        /* Mittelgrau – für Rahmen, Trennlinien */
-  --text-faded: #a1a1aa;    /* Mittleres Grau – für Details, Beschreibung */
-  --text-highlight: #e5e5e5;/* Sehr helles Grau/Weiß – für Hervorhebung */
+  --background: #110b1d;
+  --text: #f8facf;
+  --card-bg: #18181b;
+  --border: #3f3f46;
+  --text-faded: #a1a1aa;
+  --text-highlight: #e5e5e5;
 }
 
-/**************************************
- * Utility-Klassen für ein konsistentes, semantisches Farbmanagement.
- * Diese Klassen kannst du überall im Projekt verwenden, um die richtigen Farben
- * (je nach Theme) zentral zu steuern.
- **************************************/
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
 
-/* Körperhintergrund und große Flächen */
-.bg-surface {
+/* Optional: Eigene Tailwind-Classes (ggf. auch in tailwind.config.js definieren) */
+.bg-primary {
   background-color: var(--background);
 }
 
-/* Karten, Inhaltsboxen, modale Hintergründe */
-.bg-card {
-  background-color: var(--card-bg);
-}
-
-/* Zentraler Fließtext, Buttons, Überschriften, Hauptinhalt */
 .text-primary {
   color: var(--text);
 }
 
-/* Details, weniger wichtige Texte, Meta-Angaben, Footer-Text */
-.text-secondary {
+.text-faded {
   color: var(--text-faded);
 }
 
-/* Für starke Akzente, Kontraste, Überschriften, Highlight-Text */
-.text-contrast {
+.text-highlight {
   color: var(--text-highlight);
 }
 
-/* Standard-Randfarbe für Karten, Boxen, Inputs, Trennlinien */
-.border-custom {
-  border-color: var(--border);
+.bg-card {
+  background-color: var(--card-bg);
 }
 
-/**************************************
- * Erweiterbar – hier könnten weitere Farbvariablen (z. B. für Hover, Accent, Error…)
- * und dazugehörige Utility-Klassen eingefügt werden
- **************************************/
-
-/**************************************
- * Body-Basis
- * Setzt die globalen Farben für das gesamte <body>.
- * Wird automatisch von light/dark-Variablen gesteuert!
- **************************************/
-body {
-  background-color: var(--background);
-  color: var(--text);
+.border-custom {
+  border-color: var(--border);
 }
