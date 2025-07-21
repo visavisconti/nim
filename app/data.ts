@@ -37,7 +37,7 @@ export const EXPLANATION: Explanation[] = [
   {
     id: 'text1',
     description:
-      'Bilgisaray – »Palast des Wissens« – ist ein solidarischer Ort für Kultur und Nachbarschaft in Berlin-Kreuzberg. Die Idee: Räume ohne Konsumzwang schaffen.',
+      'Bilgisaray – auf Türkisch »Palast des Wissens« – ist ein solidarischer Ort für Kultur und Nachbarschaft in Berlin-Kreuzberg. Die Idee: Räume ohne Konsumzwang schaffen. Geteilte Themen sind Feminismus, Recht auf Stadt, Flucht & Migration sowie die Unterstützung von Obdachlosen. Das Bilgisaray wird durch Spenden finanziert. Die Raumvergabe ist selbstorganisiert. Der Verwaltungsaufwand sowie der Yugang yu den Schlüsseln soll gemeinschaftlich und eigenverantwortlich geplant werden.',
     image: 'https://o45.vercel.app/assets/img/posts/front.jpg', //  /images/bilgisaray.jpg Relativ zum public-Ordner
   },
   // Weitere Einträge möglich …
