@@ -1,3 +1,9 @@
+type Explanation = {
+  id: string
+  description: string
+  image: string
+}
+
 type Project = {
   name: string
   description: string
@@ -7,7 +13,7 @@ type Project = {
 }
 
 type WorkExperience = {
-  company: string
+  address: string
   title: string
   start: string
   end: string
@@ -27,99 +33,133 @@ type SocialLink = {
   link: string
 }
 
+export const EXPLANATION: Explanation[] = [
+  {
+    id: 'text1',
+    description:
+      'Bilgisaray – »Palast des Wissens« – ist ein solidarischer Ort für Kultur und Nachbarschaft in Berlin-Kreuzberg. Die Idee: Räume ohne Konsumzwang schaffen.',
+    image: 'https://bilgisaray.vercel.app/assets/img/posts/front.jpg', //  /images/bilgisaray.jpg Relativ zum public-Ordner
+  },
+  // Weitere Einträge möglich …
+]
+
+
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'Kiezkantine',
     description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
+      'food every tuesday evening - donation based ',
+    link: 'https://o45.vercel.app/posts/kiezkantine/',
     video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+      'video/video.mp4',
     id: 'project1',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
+    name: 'Random',
+    description: 'Random video of an UI kit',
     link: 'https://motion-primitives.com/',
     video:
       'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
     id: 'project2',
   },
+  {
+    name: 'Internetkantine',
+    description: 'communty cooking corona edition',
+    link: 'https://o45.vercel.app/posts/kiezkantine/',
+    video:
+      'video/internetkantine.mp4',
+    id: 'project3',
+  },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
+    address: 'Oranienstr. 45 (davor am damaligen Heinrichplatz)',
+    title: 'Bilgisaray',
+    start: '2016',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: '',
     id: 'work1',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
+    address: 'Kiezladen in der Waldemarstraße 110',
+    title: 'MaHalle',
+    start: '2017',
+    end: 'Present',
+    link: 'https://mahalle.de/',
     id: 'work2',
   },
   {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
+    address: 'Nachbarschafts- und Inklusionsgarten Moritzplatz',
+    title: 'Prinzessinnengarten-Kreuzberg',
+    start: '2013',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: 'https://prinzessinnengarten-kreuzberg.net/',
     id: 'work3',
+  },
+  {
+    address: 'Raum für die Nachbarschaft im Hof 87, Kottbusser Str. 4/5',
+    title: 'Komşukeller',
+    start: '2021',
+    end: 'Present',
+    link: 'https://www.komsukeller.de/',
+    id: 'work4',
+  },
+  {
+    address: 'Innenhof der Südblöcke am Kottbusser Tor',
+    title: 'Komşuhütte',
+    start: '2022',
+    end: 'Present',
+    link: 'https://orangotango.info/de/komsu-kulubesi-eine-huette-fuer-die-nachbarschaft/',
+    id: 'work5',
+  },
+  {
+    address: 'Lausitzer Straße 10 Aufgang B',
+    title: 'Kiezraum LauseRia',
+    start: '2022',
+    end: 'Present',
+    link: 'https://www.lause.berlin/de/kiezraum-lauseria',
+    id: 'work6',
   },
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    title: 'MAY THE COMMONS GROW AND BE EDIBLE » Arts of the Working Class',
+    description: 'Issue 16 "Food Eats the Soul"',
+    link: '/blog/press/arts-of-the-working-class',
     uid: 'blog-1',
   },
   {
-    title: 'Why I left my job to start my own company',
+    title: 'random post',
     description:
       'A deep dive into my decision to leave my job and start my own company',
     link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
     uid: 'blog-2',
   },
   {
-    title: 'What I learned from my first year of freelancing',
-    description:
-      'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-3',
-  },
-  {
-    title: 'How to Export Metadata from MDX for Next.js SEO',
+    title: 'randon tech guide',
     description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
     link: '/blog/example-mdx-metadata',
-    uid: 'blog-4',
+    uid: 'blog-3',
   },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    label: 'Github',
-    link: 'https://github.com/ibelick',
+    label: 'website by',
+    link: 'https://github.com/visavisconti',
   },
   {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    label: 'Fakebook',
+    link: 'https://www.facebook.com/bilgisarayberlin/',
   },
   {
-    label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
-  },
-  {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    label: 'Keybase (comming soon)',
+    link: 'https://keybase.io/',
   },
 ]
 
-export const EMAIL = 'your@email.com'
+// export const EMAIL = 'your@email.com'
+
+
