@@ -158,8 +158,11 @@ export const SOCIAL_LINKS: SocialLink[] = [
     label: 'Keybase (comming soon)',
     link: 'https://keybase.io/',
   },
+   {
+    label: 'mail',
+    link: 'mailto:your@email.com',
+  },
 ]
 
-export const EMAIL = 'your@email.com'
 
 
