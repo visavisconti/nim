@@ -70,6 +70,15 @@ export const PROJECTS: Project[] = [
       'video/internetkantine.mp4',
     id: 'project3',
   },
+  {
+    name: 'Random 2',
+    description:
+      'random video',
+    link: 'https://pro.motion-primitives.com/',
+    video:
+      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+    id: 'project4',
+  },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
