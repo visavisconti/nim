@@ -74,7 +74,7 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    address: 'Oranienstr. 45 (davor am damaligen Heinrichplatz)',
+    address: 'Oranienstr. 45 (zuerst am damaligen Heinrichplatz)',
     title: 'Bilgisaray',
     start: '2016',
     end: 'Present',
