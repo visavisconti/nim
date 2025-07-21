@@ -20,7 +20,16 @@
   }
 }
 
+/* Theme CSS-Variablen für Light/Dark Mode */
 :root {
+  --background: #ebd8af;
+  --text: #1e293b;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+  --text-faded: #64748b;
+  --text-highlight: #334155;
+
+  /* Syntax Highlighting (behalten, pass optional an) */
   --sh-class: #7aa2f7;
   --sh-sign: #89ddff;
   --sh-string: #9ece6a;
@@ -29,4 +38,43 @@
   --sh-jsxliterals: #7aa2f7;
   --sh-property: #73daca;
   --sh-entity: #e0af68;
+}
+
+.dark {
+  --background: #0b0529;
+  --text: #f8fafc;
+  --card-bg: #18181b;
+  --border: #3f3f46;
+  --text-faded: #a1a1aa;
+  --text-highlight: #e5e5e5;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* Optional: Eigene Tailwind-Classes (ggf. auch in tailwind.config.js definieren) */
+.bg-primary {
+  background-color: var(--background);
+}
+
+.text-primary {
+  color: var(--text);
+}
+
+.text-faded {
+  color: var(--text-faded);
+}
+
+.text-highlight {
+  color: var(--text-highlight);
+}
+
+.bg-card {
+  background-color: var(--card-bg);
+}
+
+.border-custom {
+  border-color: var(--border);
 }
