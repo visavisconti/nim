@@ -155,7 +155,7 @@ export default function Personal() {
       </motion.section>
 
 
-      <motion.section
+      {/* <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
@@ -182,13 +182,13 @@ export default function Personal() {
             </div>
           ))}
         </div>
-      </motion.section>
+      </motion.section> */}
 
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Bilgisaraynetzwerk</h3>
+        <h3 className="mb-5 text-lg font-medium">Bilgisaray-Netzwerk</h3>
         <div className="flex flex-col space-y-2">
           {WORK_EXPERIENCE.map((job) => {
             const Wrapper = job.link
