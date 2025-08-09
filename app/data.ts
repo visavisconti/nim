@@ -40,6 +40,12 @@ export const EXPLANATION: Explanation[] = [
       'Bilgisaray – auf Türkisch »Palast des Wissens« – ist ein solidarischer Ort für Kultur und Nachbarschaft in Berlin-Kreuzberg. Die Idee: Räume ohne Konsumzwang schaffen. Geteilte Themen sind Feminismus, Recht auf Stadt, Flucht & Migration sowie die Unterstützung von Obdachlosen. Das Bilgisaray wird durch Spenden finanziert. Die Raumvergabe ist selbstorganisiert. Der Verwaltungsaufwand sowie der Zugang zu den Schlüsseln soll gemeinschaftlich und eigenverantwortlich geplant werden.',
     image: 'image/front_bilgi_2.png', 
   },
+  {
+    id: 'text2',
+    description:
+      '',
+    image: 'image/inside_bilgi.jpg', 
+  },
   // Weitere Einträge möglich …
 ]
 
