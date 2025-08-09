@@ -44,7 +44,7 @@ export const EXPLANATION: Explanation[] = [
     id: 'text2',
     description:
       '',
-    image: 'image/inside_bilgi.jpg', 
+    image: 'image/inside_bilgi.png', 
   },
   // Weitere Einträge möglich …
 ]
