@@ -166,11 +166,11 @@ export const SOCIAL_LINKS: SocialLink[] = [
     link: 'https://www.facebook.com/bilgisarayberlin/',
   },
   {
-    label: 'Keybase (comming soon)',
+    label: 'Keybase (coming soon)',
     link: 'https://keybase.io/',
   },
    {
-    label: 'mail',
+    label: 'mail (coming soon)',
     link: 'mailto:your@email.com',
   },
 ]
