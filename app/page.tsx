@@ -136,9 +136,9 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         
-        <div className="space-y-2">
+        <div className="space-y-10">
           {EXPLANATION.map((entry) => (
-            <div key={entry.id} className="space-y-4">
+            <div key={entry.id} className="space-y-10">
               <img
                 src={entry.image}
                 alt=""
