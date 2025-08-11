@@ -218,9 +218,9 @@ export default function Personal() {
                   {/* Titel */}
                   <h4 className="font-normal dark:text-zinc-100">{job.title}</h4>
                   {/* Adresse + Datum nebeneinander */}
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between gap-4">
                     <p className="text-zinc-500 dark:text-zinc-400">{job.address}</p>
-                    <p className="text-zinc-600 dark:text-zinc-400 text-sm">
+                    <p className="text-zinc-600 dark:text-zinc-400 text-sm text-right min-w-[80px]">
                       {job.start} – {job.end}
                     </p>
                   </div>
@@ -230,6 +230,7 @@ export default function Personal() {
           })}
         </div>
       </motion.section>
+
 
 
 
