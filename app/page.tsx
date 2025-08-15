@@ -24,9 +24,7 @@ const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.15,
-    },
+    transition: { staggerChildren: 0.15 },
   },
 }
 
@@ -35,13 +33,9 @@ const VARIANTS_SECTION = {
   visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
 }
 
-const TRANSITION_SECTION = {
-  duration: 0.3,
-}
+const TRANSITION_SECTION = { duration: 0.3 }
 
-type ProjectVideoProps = {
-  src: string
-}
+type ProjectVideoProps = { src: string }
 
 function ProjectVideo({ src }: ProjectVideoProps) {
   return (
@@ -131,11 +125,11 @@ export default function Personal() {
       initial="hidden"
       animate="visible"
     >
+      {/* Erklärung */}
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        
         <div className="space-y-10">
           {EXPLANATION.map((entry) => (
             <div key={entry.id} className="space-y-10">
@@ -147,43 +141,12 @@ export default function Personal() {
               <p className="text-zinc-600 dark:text-zinc-400">
                 {entry.description}
               </p>
-          </div>
-))}
-
-
-        </div>
-      </motion.section>
-
-
-      {/* <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
-        <h3 className="mb-5 text-lg font-medium">Selected Projects</h3>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {PROJECTS.map((project) => (
-            <div key={project.name} className="space-y-2">
-              <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                <ProjectVideo src={project.video} />
-              </div>
-              <div className="px-1">
-                <a
-                  className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
-                  href={project.link}
-                  target="_blank"
-                >
-                  {project.name}
-                  <span className="absolute bottom-0.5 left-0 block h-[1px] w-full max-w-0 bg-zinc-900 dark:bg-zinc-50 transition-all duration-200 group-hover:max-w-full"></span>
-                </a>
-                <p className="text-base text-zinc-600 dark:text-zinc-400">
-                  {project.description}
-                </p>
-              </div>
             </div>
           ))}
         </div>
-      </motion.section> */}
+      </motion.section>
 
+      {/* Bilgisaray-Netzwerk */}
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
@@ -207,7 +170,6 @@ export default function Personal() {
                     {...props}
                   />
                 )
-
             return (
               <Wrapper key={job.id}>
                 <Spotlight
@@ -215,9 +177,7 @@ export default function Personal() {
                   size={64}
                 />
                 <div className="relative h-full w-full rounded-[15px] bg-white p-4 dark:bg-zinc-950">
-                  {/* Titel */}
                   <h4 className="font-normal dark:text-zinc-100">{job.title}</h4>
-                  {/* Adresse + Datum nebeneinander */}
                   <div className="flex items-center justify-between gap-4">
                     <p className="text-zinc-500 dark:text-zinc-400">{job.address}</p>
                     <p className="text-zinc-600 dark:text-zinc-400 text-sm text-right min-w-[80px]">
@@ -231,10 +191,36 @@ export default function Personal() {
         </div>
       </motion.section>
 
+      {/* Karte */}
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h3 className="mb-5 text-lg font-medium">Bilgisaray Karte</h3>
+        <div className="overflow-hidden rounded-xl ring-1 ring-zinc-200 dark:ring-zinc-800">
+          <iframe
+            width="100%"
+            height="300"
+            frameBorder="0"
+            allowFullScreen
+            allow="geolocation"
+            src="//umap.openstreetmap.de/de/map/bilgisaray_104305?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=null&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=none&captionBar=false&captionMenus=false&captionControl=null&fullscreenControl=null#15/52.5001/13.4227"
+            className="w-full"
+          />
+        </div>
+        <p className="mt-2">
+          <a
+            href="//umap.openstreetmap.de/de/map/bilgisaray_104305?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline dark:text-blue-400"
+          >
+            Vollbildanzeige
+          </a>
+        </p>
+      </motion.section>
 
-
-
-
+      {/* Presse */}
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
@@ -258,9 +244,7 @@ export default function Personal() {
                 data-id={post.uid}
               >
                 <div className="flex flex-col space-y-1">
-                  <h4 className="font-normal dark:text-zinc-100">
-                    {post.title}
-                  </h4>
+                  <h4 className="font-normal dark:text-zinc-100">{post.title}</h4>
                   <p className="text-zinc-500 dark:text-zinc-400">
                     {post.description}
                   </p>
@@ -271,6 +255,7 @@ export default function Personal() {
         </div>
       </motion.section>
 
+      {/* Social Links */}
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
