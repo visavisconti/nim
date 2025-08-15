@@ -204,7 +204,7 @@ export default function Personal() {
             frameBorder="0"
             allowFullScreen
             allow="geolocation"
-            src="//umap.openstreetmap.de/de/map/bilgisaray_104305?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=null&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=none&captionBar=false&captionMenus=false&captionControl=null&fullscreenControl=null#15/52.5001/13.4227"
+            src="//umap.openstreetmap.de/de/map/bilgisaray_104305?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=null&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=none&captionBar=false&captionMenus=false&captionControl=null&fullscreenControl=null#14/52.5001/13.4227"
             className="w-full"
           />
         </div>
