@@ -260,7 +260,7 @@ export default function Personal() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <h3 className="mb-5 text-lg font-medium">Connect</h3>
+        <h3 className="mb-5 text-lg font-medium">Du kannst mitmachen! Schreib uns eine Nachricht, sprich uns an, komm zu einem unserer Treffen, z.B. Dienstag Abend zur Kiezkantine.</h3>
         <div className="flex items-center justify-start space-x-3">
           {SOCIAL_LINKS.map((link) => (
             <MagneticSocialLink key={link.label} link={link.link}>
