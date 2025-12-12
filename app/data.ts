@@ -158,6 +158,12 @@ export const BLOG_POSTS: BlogPost[] = [
     link: 'https://adocs.de/de/buecher/theorie/solidaritaten-transformieren',
     uid: 'blog-3',
   },
+  {
+    title: 'Kiezkantine - Sorgeinfrastruktur von unten',
+    description: 'Artikel im nd',
+    link: 'https://www.nd-aktuell.de/artikel/1185618.internationale-solidaritaet-berlin-sorgearbeit-von-unten.html',
+    uid: 'blog-4',
+  },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
