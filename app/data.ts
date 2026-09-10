@@ -168,8 +168,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    label: 'Fakebook',
-    link: 'https://www.facebook.com/bilgisarayberlin/',
+    label: 'Telegram',
+    link: 'https://t.me/+77kSUVTr9tYxNjU6',
   },
   {
     label: 'Keybase (coming soon)',
