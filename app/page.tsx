@@ -261,6 +261,13 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <h3 className="mb-5 text-lg font-medium">Du kannst mitmachen! Schreib uns eine Nachricht, sprich uns an, komm zu einem unserer Treffen, z.B. Dienstag Abend zur Kiezkantine.</h3>
+
+<h3 className="mb-5 text-lg font-medium">
+Whether it's €2 or a regular transfer,  everything helps us!  You have a group and need a space? Pass by  and speak with us.
+Together for the preservation of  self organised spaces!  For a neighbourhood based on solidarity!
+ISKRA e.V.
+IBAN: DE29 1005 0000 0190 6228 65  Berliner Sparkasse  Verwendungszweck: Spende
+</h3>
         <div className="flex items-center justify-start space-x-3">
           {SOCIAL_LINKS.map((link) => (
             <MagneticSocialLink key={link.label} link={link.link}>
